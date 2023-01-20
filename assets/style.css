@@ -1,3 +1,4 @@
+/*<editor-fold desc="Description">*/
 @font-face {
     font-family: 'Arodora Pro';
     src: url('/resources/fonts/ArodoraPro-Light.otf') format("opentype");
@@ -16,7 +17,7 @@
 @font-face {
     font-family: 'NEXT ART';
     src: url('/resources/fonts/NEXT ART_Regular.otf') format("opentype");
-    ;
+;
     font-weight: normal;
     font-style: normal;
 }
@@ -59,27 +60,27 @@ body {
 
 }
 
-.footer_logo__menu>.header_logo>a,
-.header_menu>.header_logo>a {
+.footer_logo__menu > .header_logo > a,
+.header_menu > .header_logo > a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.footer_logo__menu>li>a,
-.header_menu>li>a {
+.footer_logo__menu > li > a,
+.header_menu > li > a {
 
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s linear;
 }
 
-.footer_logo__menu>li>a:hover,
-.header_menu>li>a:hover {
+.footer_logo__menu > li > a:hover,
+.header_menu > li > a:hover {
     color: #bfbfbf;
 }
 
-.header_logo>a>span {
+.header_logo > a > span {
     font-family: 'Nico Moji';
     font-style: normal;
     font-weight: 400;
@@ -88,7 +89,7 @@ body {
     padding-left: 10px;
 }
 
-.header_logo>a>img {
+.header_logo > a > img {
     width: 35px;
     height: 30px;
 }
@@ -103,7 +104,7 @@ body {
     line-height: 21px;
 }
 
-.container_footer>ul>li {
+.container_footer > ul > li {
     padding-bottom: 18px;
 }
 
@@ -116,13 +117,13 @@ body {
 
 .footer_logo__menu,
 .footer_contacts,
-.footer_menu>li>a {
+.footer_menu > li > a {
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s linear;
 }
 
-.footer_menu>li>a:hover {
+.footer_menu > li > a:hover {
     color: #bfbfbf;
 }
 
@@ -133,8 +134,8 @@ body {
 
 img.anchor_Item {
     cursor: pointer;
-    width: 60px!important;
-    height: 60px!important;
+    width: 60px !important;
+    height: 60px !important;
     margin-left: 32px;
     filter: brightness(1);
     transition: all 0.3s linear;
@@ -152,12 +153,14 @@ img.anchor_Item:hover {
     position: absolute;
     bottom: 0;
 }
+
 .footer_logo__menu,
 .footer_contacts,
 .footer_menu {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 /*=======header/footer End==========*/
 
 .cardContainer {
@@ -165,13 +168,16 @@ img.anchor_Item:hover {
     align-items: center;
     justify-content: center;
 }
+
 .card {
     margin-top: 80px;
     margin-bottom: 100px;
 }
+
 .userInfo {
     margin-top: 80px;
 }
+
 .cardContainerItem {
     width: 200px;
     height: 200px;
@@ -181,10 +187,12 @@ img.anchor_Item:hover {
     margin: 20px;
     transition: linear all 0.3s;
 }
+
 .cardContainerItem {
     height: 200px;
     position: relative;
 }
+
 .cardContainerItemImage {
     margin: 0;
     position: absolute;
@@ -205,6 +213,7 @@ img.anchor_Item:hover {
 .cardContainerItem:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.87);
 }
+
 .flexContainer {
     display: flex;
     justify-content: space-between;
@@ -264,6 +273,7 @@ p {
     background: #ffb700;
     box-shadow: 0px 2px 13px rgba(174, 122, 1, 0.48);
 }
+
 .button_contactMe > a {
     text-decoration: none;
     font-family: 'NEXT ART';
@@ -280,12 +290,14 @@ p {
     width: 370px;
     position: relative;
 }
+
 .userImg > h2 {
     position: absolute;
     z-index: 1;
     top: -26px;
     left: 60px;
 }
+
 .userInfoText {
     margin-top: 100px;
     position: relative;
@@ -301,18 +313,21 @@ p {
     top: 7%;
     left: -165%;
 }
+
 .userImgElipseTwo {
     position: absolute;
     width: 480px;
     bottom: -13%;
     right: -75%;
 }
+
 .userImgElipseThree {
     position: absolute;
     width: 356px;
     top: -10%;
     right: -69%;
 }
+
 .userImgPhotoOne {
     position: absolute;
     padding: 30px;
@@ -321,6 +336,7 @@ p {
     right: -90%;
     top: 16%;
 }
+
 .userImgPhotoTwo {
     position: absolute;
     padding: 30px;
@@ -329,6 +345,7 @@ p {
     bottom: -5%;
     left: -80%;
 }
+
 .userImgPhotoThree {
     position: absolute;
     padding: 30px;
@@ -337,6 +354,7 @@ p {
     top: -3%;
     left: -86%;
 }
+
 .userNameImage {
     height: 557px;
 }
@@ -345,21 +363,24 @@ p {
 /*=======sliderPortfolio==========*/
 .itcss__item {
     height: 510px;
-    background:linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
     box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
     border-radius: 29px;
     background-color: transparent;
 }
-.portfolioText{
+
+.portfolioText {
     margin-left: auto;
     margin-right: auto;
     width: 270px;
     margin-top: 100px;
     margin-bottom: 50px;
 }
+
 .sliderPortfolio {
     margin-bottom: 150px;
 }
+
 .flexSlider {
     display: flex;
     justify-content: space-around;
@@ -369,10 +390,12 @@ p {
     width: 350px;
     padding: 50px;
 }
+
 .sliderItemText {
     margin: 50px 50px 50px 0;
 }
-.sliderItemText > h3{
+
+.sliderItemText > h3 {
     font-family: 'Arodora Pro';
     font-style: normal;
     font-weight: 300;
@@ -381,6 +404,7 @@ p {
     text-align: center;
     color: #FFFFFF;
 }
+
 .sliderItemText > p {
     font-family: 'Arodora Pro';
     font-style: normal;
@@ -390,4 +414,6 @@ p {
     color: #FFFFFF;
     text-align: center;
 }
+
 /*=======sliderPortfolio End==========*/
+/*</editor-fold>*/
