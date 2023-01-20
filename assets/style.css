@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'NEXT ART';
-    src: url('/resources/fonts/NEXT\ ART_Regular.otf') format("opentype");
+    src: url('/resources/fonts/NEXT ART_Regular.otf') format("opentype");
     ;
     font-weight: normal;
     font-style: normal;
@@ -133,8 +133,8 @@ body {
 
 img.anchor_Item {
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: 60px!important;
+    height: 60px!important;
     margin-left: 32px;
     filter: brightness(1);
     transition: all 0.3s linear;
@@ -152,9 +152,59 @@ img.anchor_Item:hover {
     position: absolute;
     bottom: 0;
 }
+.footer_logo__menu,
+.footer_contacts,
+.footer_menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*=======header/footer End==========*/
 
-/*=======header/footer==========*/
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.userInfo {
+    margin-top: 80px;
+}
+.cardContainerItem {
+    width: 200px;
+    height: 200px;
+    background: #2A2A2A;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    border-radius: 29px;
+    margin: 20px;
+    transition: linear all 0.3s;
+}
+.cardContainerItem {
+    height: 200px;
+    position: relative;
+}
+.cardContainerItemImage {
+    margin: 0;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 
+.cardContainerItemText {
+    position: absolute;
+    bottom: -4%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.cardContainerItem:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.87);
+}
 .flexContainer {
     display: flex;
     justify-content: space-between;
@@ -196,9 +246,10 @@ p {
 .userPhoto {
     max-width: 632px;
     height: 674px;
+    object-fit: cover;
 }
 
-.button_contactMe {
+.button_contactMe > a {
     padding: 10px;
     cursor: pointer;
     position: absolute;
@@ -209,24 +260,134 @@ p {
     transition: all 0.7s;
 }
 
-.button_contactMe:hover {
+.button_contactMe > a:hover {
     background: #ffb700;
     box-shadow: 0px 2px 13px rgba(174, 122, 1, 0.48);
 }
-
+.button_contactMe > a {
+    text-decoration: none;
+    font-family: 'NEXT ART';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
 
 .userInfo {
-    margin-top: 100px;
-    position: relative;
-    padding: 60px;
-    background-color: #2C2C2C;
-    border-radius: 14px;
     margin-left: auto;
     margin-right: auto;
     width: 370px;
     position: relative;
 }
-.userInfo > h2 {
+.userImg > h2 {
     position: absolute;
-    top: -30px;
+    z-index: 1;
+    top: -26px;
+    left: 60px;
 }
+.userInfoText {
+    margin-top: 100px;
+    position: relative;
+    padding: 60px;
+    background-color: #2C2C2C;
+    border-radius: 14px;
+    margin-bottom: 160px;
+}
+
+.userImgElipseOne {
+    position: absolute;
+    width: 800px;
+    top: 7%;
+    left: -165%;
+}
+.userImgElipseTwo {
+    position: absolute;
+    width: 480px;
+    bottom: -13%;
+    right: -75%;
+}
+.userImgElipseThree {
+    position: absolute;
+    width: 356px;
+    top: -10%;
+    right: -69%;
+}
+.userImgPhotoOne {
+    position: absolute;
+    padding: 30px;
+    background-color: #2C2C2C;
+    border-radius: 14px;
+    right: -90%;
+    top: 16%;
+}
+.userImgPhotoTwo {
+    position: absolute;
+    padding: 30px;
+    background-color: #2C2C2C;
+    border-radius: 14px;
+    bottom: -5%;
+    left: -80%;
+}
+.userImgPhotoThree {
+    position: absolute;
+    padding: 30px;
+    background-color: #2C2C2C;
+    border-radius: 14px;
+    top: -3%;
+    left: -86%;
+}
+.userNameImage {
+    height: 557px;
+}
+
+
+/*=======sliderPortfolio==========*/
+.itcss__item {
+    height: 510px;
+    background:linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
+    border-radius: 29px;
+    background-color: transparent;
+}
+.portfolioText{
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.sliderPortfolio {
+    margin-bottom: 150px;
+}
+.flexSlider {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sliderItemImage {
+    width: 350px;
+    padding: 50px;
+}
+.sliderItemText {
+    margin: 50px 50px 50px 0;
+}
+.sliderItemText > h3{
+    font-family: 'Arodora Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.sliderItemText > p {
+    font-family: 'Arodora Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+}
+/*=======sliderPortfolio End==========*/
